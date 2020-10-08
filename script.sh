@@ -6,7 +6,7 @@ timestamp="$(date +%s)"
 
 ffmpeg \
 \
--re -fflags +genpts -stream_loop -1 -i testclip.mp4 \
+-re -i rtmp://localhost:1935/input \
 \
 -flags +global_header -r 30000/1001 \
 \

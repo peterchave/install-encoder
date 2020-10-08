@@ -17,10 +17,7 @@ echo http://p-ep$1.i.akamaientrypoint.net/cmaf/$1/event/out.mpd >> script.sh
 chmod +x script.sh
 pm2 start script.sh
 pm2 save
-pm2 startup | tail -n 1 > startup.sh
-chmod +x startup.sh
-./startup.sh
-rm startup.sh
+pm2 startup
 
 # config ngnix
 sudo cp nginx.conf /etc/nginx/nginx.conf

@@ -23,5 +23,5 @@ chmod +x startup.sh
 rm startup.sh
 
 # config ngnix
-sudo cp ngnix.conf /etc/ngnix/nginx.conf
-sudo service ngnix restart
+sudo cp nginx.conf /etc/nginx/nginx.conf
+sudo service nginx restart

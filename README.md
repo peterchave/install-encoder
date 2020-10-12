@@ -5,9 +5,11 @@ To use:
 Deploy 4 vCPU machine, with Ubuntu 18.04 LTS
 For higher resolutions / frame rates more vCPUs will be required.
 
-git clone https://github.com/peterchave/install-encoder.git
-cd install-encoder
-chmod +x *.sh
-./install.sh
+<code>
+git clone https://github.com/peterchave/install-encoder.git<br>
+cd install-encoder<br>
+chmod +x *.sh<br>
+./install.sh<br>
+</code>
 
 Low latency test client: http://mediapm.edgesuite.net/will/dash/lowlatency/low-latency-public-variable.html?latency=3&url=

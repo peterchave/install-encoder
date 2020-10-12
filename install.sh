@@ -11,14 +11,3 @@ sudo apt-get -y install ffmpeg nginx libnginx-mod-rtmp
 # Install PM2 to run it, save the config, make it start at boot and then shut it down for further config
 sudo apt-get -y install npm
 sudo npm install pm2@latest -g
-
-# inject EntryPoint into encoder script
-echo http://p-ep$1.i.akamaientrypoint.net/cmaf/$1/event/out.mpd >> script.sh
-chmod +x script.sh
-pm2 startup
-pm2 start script.sh
-pm2 save
-
-# config ngnix
-sudo cp nginx.conf /etc/nginx/nginx.conf
-sudo service nginx restart

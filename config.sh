@@ -10,4 +10,3 @@ chmod +x script.sh
 pm2 startup
 pm2 start script.sh
 pm2 save
-pm2 stop script

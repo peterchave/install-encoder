@@ -7,6 +7,7 @@ timestamp="$(date +%s)"
 ffmpeg \
 \
 -re -i rtmp://localhost:1935/input \
+-max_muxing_queue_size 9999 \
 \
 -flags +global_header -r 30000/1001 \
 \

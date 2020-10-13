@@ -8,5 +8,5 @@ chmod +x encoder.sh
 
 # enable pm2 to start on reboot, start script, save and then stop it.
 pm2 startup
-pm2 start script.sh
+pm2 start encoder.sh
 pm2 save

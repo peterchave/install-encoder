@@ -6,12 +6,10 @@ To use:
 Deploy 4 vCPU machine, with Ubuntu 18.04 LTS
 For higher resolutions / frame rates more vCPUs will be required.
 
-<code>git clone https://github.com/peterchave/install-encoder.git</code><br>
-<code>cd install-encoder</code><br>
-<code>chmod +x *.sh</code><br>
-<code>./install.sh</code><br>
-<code>./config.sh</code><br>
+<code>wget https://raw.githubusercontent.com/peterchave/install-encoder/main/setup.sh && setup.sh</code><br>
 
 If deploying from a custom image with ffmpeg and nginx installed, you can skip the install.sh step.
+
+<code>wget https://raw.githubusercontent.com/peterchave/install-encoder/main/setup-configonly.sh && setup-configonly.sh</code><br>
 
 Low latency test client: http://mediapm.edgesuite.net/will/dash/lowlatency/low-latency-public-variable.html?latency=3&url=
